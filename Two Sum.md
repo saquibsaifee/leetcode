@@ -8,7 +8,6 @@
 	Initialize the HashMap and store the SecondElement by using above formula and check if the current value in the loop is in the HashMap already. 
 	If exist than we got our a and b = target. If not the add the b in the HashMap linked to the a.
 
-
 2. Sort the list and have two pointers
 	one on the first going toward the end, pointer i
 	second on the last element coming towards the first, pointer j
