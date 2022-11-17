@@ -20,6 +20,7 @@ Output: 0
 Explanation: In this case, no transactions are done and the max profit = 0.
 
 Solution:
+
 	def maxProfit(self, prices: List[int]) -> int: 
         buy, sell = 0, 1
         maxP = 0
@@ -32,4 +33,4 @@ Solution:
             sell += 1
         return (maxP)
 
-Hint: Two pointers
+Hint: [[Two Pointers]]
