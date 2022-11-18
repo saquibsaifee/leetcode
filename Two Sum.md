@@ -1,3 +1,4 @@
+[[Array & Hashing (C)]]
 # **Intuition**
 1. we can translate our problem into this equation, right? 
 	a + b = c 
@@ -22,10 +23,11 @@
 Time: O(n) as we are only traversing through the list once.
 Space: O(n) as we are taking additional space by adding all the elements in the HashMap.
 
-hashmap = dict()
-for i in range(len(nums)):
-	if nums[i] in hashmap:
-		return [hashmap[nums[i]], i]
-	else:
-		hashmap[target - nums[i]] = i
-return False
+# Solution:
+	hashmap = dict()
+	for i in range(len(nums)):
+		if nums[i] in hashmap:
+			return [hashmap[nums[i]], i]
+		else:
+			hashmap[target - nums[i]] = i
+	return False
