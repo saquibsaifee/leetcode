@@ -1,3 +1,5 @@
+[[Array & Hashing (C)]]
+
 # **Intuition**
 Intuition 1:
 What if we remove duplicates and then compare the later one with original?
@@ -17,23 +19,21 @@ Make a hash set
 Iterate over the list and see if the value is already in the hash set, if it is there than return True implying there is duplicate.
 If not, add the element in hash set and iterate to next element.
 
-# **Code**
+# **Solution**
 
 **1st approach
 One liner:**
-
-return(len(nums)!=len(set(nums)))
+	return(len(nums)!=len(set(nums)))
 
 **2nd approach:**
 
-hashset = set()
-
-for i in nums:
-	if i in hashset:
-		return True
-	else:
-		hashset.add(i)
-return False
+	hashset = set()	
+	for i in nums:
+		if i in hashset:
+			return True
+		else:
+			hashset.add(i)
+	return False
 
 # **Complexity**
 
