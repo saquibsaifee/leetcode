@@ -33,4 +33,4 @@ Solution:
             sell += 1
         return (maxP)
 
-Hint: [[Two Pointers]]
+Hint: [[Sliding Window (C)]]
