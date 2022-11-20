@@ -1,4 +1,4 @@
-[[Linked List (C)]]
+[[Linked List Question]]
 
 # 206. Reverse Linked List
 
