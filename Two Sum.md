@@ -1,4 +1,4 @@
-[[Array & Hashing (C)]]
+[[Array & Hashing Questions (C)]]
 # **Intuition**
 1. we can translate our problem into this equation, right? 
 	a + b = c 
@@ -14,14 +14,6 @@
 	second on the last element coming towards the first, pointer j
 	Compare if first and last element is equal to the target, if greater than the decrease the pointer by 1
 	if smaller then increase the pointer i by 1
-
-# **Approach**
-1. 
-
-# **Complexity**
-
-Time: O(n) as we are only traversing through the list once.
-Space: O(n) as we are taking additional space by adding all the elements in the HashMap.
 
 # Solution:
 	hashmap = dict()
