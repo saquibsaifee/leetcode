@@ -1,4 +1,4 @@
-[[Array & Hashing (C)]]
+[[Array & Hashing Questions (C)]]
 
 # **Intuition**
 Both string will have same number of alphabets, right?
