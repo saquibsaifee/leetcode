@@ -1,7 +1,7 @@
 # Leet code
 Collection of Leet Code questions for daily consistency.
 
-1. [[Array & Hashing Questions (C)]]
+1. ![Array & Hashing Questions (C)](https://github.com/saquibsaifee/leetcode/blob/main/Array%20%26%20Hashing%20Questions%20(C).md)
 	1. [[Contain Duplicates]]
 	2. [[Valid Anagram]]
 	3. [[Two Sum]]
