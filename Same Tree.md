@@ -32,8 +32,4 @@ Two binary trees are considered the same if they are structurally identical, and
 # Solution 1 ()
 
 
-# Solution 2 ()
-
-
-
 
