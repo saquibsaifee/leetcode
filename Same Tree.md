@@ -30,6 +30,3 @@ Two binary trees are considered the same if they are structurally identical, and
 **Output:** false
 
 # Solution 1 ()
-
-
-
