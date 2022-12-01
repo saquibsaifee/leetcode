@@ -30,7 +30,7 @@ Explanation: The input binary string 11111111111111111111111111111101 has a tota
             n = n >> 1
         return count
 
-# Solution 2 ($ by n-)
+# Solution 2 (&   by n-)
 	def hammingWeight(self, n: int) -> int:
         res = 0
         while n:
