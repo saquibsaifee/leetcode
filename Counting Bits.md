@@ -30,15 +30,12 @@ Explanation:
 
 # Solution 1 ()
     def countBits(self, n: int) -> List[int]:
-        dp = [0] * (n + 1)
-        offset = 1
+        dp: list = [0] * (n + 1)
+        offset: int = 1
 
         for n in range(1, n+1):
-            if offset * 2 == n:
-                offset = n
+            if (offset * 2) == n:
+                offset = n  
             dp[n] = 1 + dp[n - offset]
-
-        return d
-
-
+        return dp
 
