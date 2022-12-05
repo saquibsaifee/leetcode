@@ -22,9 +22,9 @@ Given an array `nums` containing `n` distinct numbers in the range `[0, n]`
 **Explanation:** n = 9 since there are 9 numbers, so all numbers are in the range [0,9]. 8 is the missing number in the range since it does not appear in nums.
 
 # Solution 1:
-    def missingNumber(self, nums: List[int]) -> int:
-        temp = [x for x in range(len(nums)+1)]
-        return sum(temp) - sum(nums)
+	def missingNumber(self, nums: List[int]) -> int:
+		temp = [x for x in range(len(nums)+1)]
+		return sum(temp) - sum(nums)
 
 # Solution 2:
     def missingNumber(self, nums: List[int]) -> int:
