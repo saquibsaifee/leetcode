@@ -1,6 +1,9 @@
 Type: [[Two Pointers Questions (C)]]
+
 Easy(12/11/2022)
+
 Leetcode link: https://leetcode.com/problems/is-subsequence/description/
+
 Notes: 2 pointers
 
 # 392. Is Subsequence
