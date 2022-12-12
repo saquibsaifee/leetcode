@@ -1,6 +1,9 @@
 [[Array & Hashing Questions (C)]]
+
 Easy (12/10/2022)
+
 Leet code link: https://leetcode.com/problems/replace-elements-with-greatest-element-on-right-side/
+
 Notes: 
 
 # Question Name
