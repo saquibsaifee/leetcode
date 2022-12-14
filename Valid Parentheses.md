@@ -19,6 +19,7 @@ An input string is valid if:
 **Input:** s = "(]"
 **Output:** false
 
+
 # Solution:
 	def isValid(self, s: str) -> bool:
         Hashmap = {")": "(", "]": "[", "}": "{"}
