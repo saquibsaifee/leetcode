@@ -5,9 +5,13 @@ Collection of Leet Code questions for daily consistency.
 	1. [[Contain Duplicates]]
 	2. [[Valid Anagram]]
 	3. [[Two Sum]]
+	4. [[Longest Common Prefix]]
+	5. [[Add Strings]]
+
 
 2. [[Two Pointers Questions (C)]]
 	1. [[Palindrome]]
+
 
 3. [[Sliding Window Questions (C)]]
 	1. [[Best Time to Buy and Sell stock]]
@@ -15,11 +19,14 @@ Collection of Leet Code questions for daily consistency.
 4. [[Stack Questions (C)]]
 	1. [[Valid Parentheses]]
 
+
 5. [[Linked List Question (C)]]
 	- Easy
 	1. [[Reverse Linked List]] (11/18/2022)
 	2. [[Merge Two Sorted Lists]] (11/19/2022)
 	3. [[Linked List Cycle]] (11/20/2022)
+	4. [[Middle of the Linked List]]
+
 
 
 
