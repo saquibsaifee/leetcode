@@ -23,3 +23,14 @@
 		else:
 			hashmap[target - nums[i]] = i
 	return False
+
+	```python
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        C = target
+        hashmap = dict()
+        for index, A in enumerate(nums):
+            B = C - A
+            if B in hashmap:
+                return [index, hashmap[B]]
+            hashmap[A] = index
+```
