@@ -16,6 +16,7 @@ Collection of Leet Code questions for daily consistency.
 3. [[Sliding Window Questions (C)]]
 	1. [[Best Time to Buy and Sell stock]]
 
+
 4. [[Stack Questions (C)]]
 	1. [[Valid Parentheses]]
 
@@ -26,6 +27,10 @@ Collection of Leet Code questions for daily consistency.
 	2. [[Merge Two Sorted Lists]] (11/19/2022)
 	3. [[Linked List Cycle]] (11/20/2022)
 	4. [[Middle of the Linked List]]
+
+6. [[Binary Search Questions (C)]]
+	- Easy
+	1. [[Binary Search]]
 
 
 
