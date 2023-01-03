@@ -4,7 +4,7 @@ Leet code Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/su
 
 Easy(01/01/2023)
 
-Notes: Go left or right and check the mid
+Notes: if sell > buy change the max and keep increasing the sell. return max_profit.
 
 
 # 121. Best Time to Buy and Sell Stock
