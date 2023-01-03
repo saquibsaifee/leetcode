@@ -1,4 +1,11 @@
-[[Linked List Question (C)]]
+Type: [[Linked List Question (C)]]
+
+Leet code Link: https://leetcode.com/problems/merge-two-sorted-lists/description/
+
+Easy(01/03/2023)
+
+Notes: make new linked list, compare value and keep adding them.
+
 # 21. Merge Two Sorted Lists
 
 You are given the heads of two sorted linked lists `list1` and `list2`.
@@ -22,22 +29,23 @@ Return _the head of the merged linked list_.
 **Output:** [0]
 
 # Solution:
-	def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-        dummy = ListNode()
-        tail = dummy
-        
+
+```python
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        newList = ListNode()
+        tail = newList
+
         while list1 and list2:
             if list1.val < list2.val:
                 tail.next = list1
                 list1 = list1.next
             else:
                 tail.next = list2
-                list2 = list2.next                
+                list2 = list2.next
             tail = tail.next
-            
-        if list1:
-            tail.next = list1
-        if list2:
-            tail.next = list2
-            
-        return dummy.next
+
+        if list1: tail.next = list1
+        elif list2: tail.next = list2
+
+        return newList.next
+```
