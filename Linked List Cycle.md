@@ -1,7 +1,12 @@
-[[Linked List Question (C)]]
-Easy (11/20/2022)
+Type: [[Linked List Question (C)]]
+
+Easy (01/04/2022)
+
+Notes: slow and fast pointer. if there is a cycle slow and fast will met at some point.
+
 
 # 141. Linked List Cycle
+
 Given `head`, the head of a linked list, determine if the linked list has a cycle in it.
 
 There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the `next` pointer. Internally, `pos` is used to denote the index of the node that tail's `next` pointer is connected to. **Note that `pos` is not passed as a parameter**.
@@ -29,12 +34,32 @@ Return `true` _if there is a cycle in the linked list_. Otherwise, return `fa
 **Output:** false
 **Explanation:** There is no cycle in the linked list.
 
-# Solution
-	def hasCycle(self, head: Optional[ListNode]) -> bool:
+# Solution (Pointers)
+
+ ```python
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
         slowP, fastP = head, head
+
         while fastP and fastP.next:
             slowP = slowP.next
             fastP = fastP.next.next
             if slowP == fastP:
                 return True
         return False
+```
+
+
+# Solution (Hashset)
+
+```python
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
+        hashset = set()
+
+        while head:
+            if head in hashset: 
+                return True
+            hashset.add(head)
+            head = head.next
+
+        return False
+```

@@ -1,6 +1,10 @@
 [[Tree Questions (C)]] 
+
 Easy (11/21/2022)
+
 Leet code link: https://leetcode.com/problems/invert-binary-tree/submissions/
+
+Notes: Recursion, Swap left to right
 
 # 226. Invert Binary Tree
 Given the `root` of a binary tree, invert the tree, and return _its root_.
@@ -23,29 +27,29 @@ Given the `root` of a binary tree, invert the tree, and return _its root_.
 **Input:** root = []
 **Output:** []
 
-# Solution 1 (iteration)
+# Solution 1 (BFS, iteration)
 
-    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
-        if not root:
-            return None
+```python
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:   
+        if not root: return None
 
         queue = collections.deque([root])
-        
+
         while queue:
-            current = queue.popleft()
-            current.left, current.right = current.right, current.left
+            curr = queue.popleft()
+            curr.left, curr.right = curr.right, curr.left
 
-            if current.left:
-                queue.append(current.left)
+            if curr.left: queue.append(curr.left)
+            if curr.right: queue.append(curr.right)
 
-            if current.right:
-                queue.append(current.right)
-        
         return root
+```
+
 
 # Solution 2 (recursive)
 
-    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+```python
+	def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         #base case
         if not root:
             return None
@@ -61,4 +65,3 @@ Given the `root` of a binary tree, invert the tree, and return _its root_.
 
         #returning the new root after swapping
         return root
-
