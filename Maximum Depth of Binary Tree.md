@@ -1,6 +1,10 @@
 [[Tree Questions (C)]] 
+
 Easy (11/23/2022)
+
 Leet code link: https://leetcode.com/problems/maximum-depth-of-binary-tree/
+
+Notes: DFS, BFS.
 
 # 104. Maximum Depth of Binary Tree
 
@@ -20,13 +24,19 @@ A binary tree's **maximum depth** is the number of nodes along the longest pat
 **Input:** root = [1,null,2]
 **Output:** 2
 
+
 # Solution 1 (recursive DFS)
-    def maxDepth(self, root: Optional[TreeNode]) -> int:
-        if not root:
-            return 0
-        return (1 + max(self.maxDepth(root.left), self.maxDepth(root.right)))
+
+```python
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        if not root: return 0
+
+        return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
+```
 
 # Solution 2 (iterative DFS)
+
+```python 
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         stack = [[root, 1]]
         res = 0
@@ -37,21 +47,21 @@ A binary tree's **maximum depth** is the number of nodes along the longest pat
                 stack.append([node.left, depth + 1])
                 stack.append([node.right, depth + 1])
         return res
+```
 
 # Solution 3 (iterative BFS)
-    def maxDepth(self, root: Optional[TreeNode]) -> int:
-        if not root:
-            return 0
-        queue = collections.deque([root])
-        counter = 0
-        while queue:
-            for i in range(len(queue)):
-                curr = queue.popleft()
-                if curr.left:
-                    queue.append(curr.left)
-                if curr.right:
-                    queue.append(curr.right)
-            counter += 1
-        return counter
 
+```python
+def maxDepth(self, root: Optional[TreeNode]) -> int:
+	    if not root: return 0
+        queue = collections.deque([root])
+        level = 0
+
+        while queue:
+             for i in range(len(queue)):
+                 curr = queue.popleft()
+                 if curr.left: queue.append(curr.left)
+                 if curr.right: queue.append(curr.right)
+             level += 1
+         return level
 
