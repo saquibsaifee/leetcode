@@ -1,7 +1,7 @@
-[[Bit Manipulation Questions (C)]]
+Type: [[Bit Manipulation Questions (C)]]
 Easy (12/02/2022)
 Leet code link: https://leetcode.com/problems/counting-bits/
-Notes: use dp 
+Notes: use dp and offset of offset*2=i: offset =i
 
 # 338. Counting Bits
 Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
@@ -25,14 +25,16 @@ Explanation:
 4 --> 100
 
 
-# Solution 1 ()
-    def countBits(self, n: int) -> List[int]:
-        dp: list = [0] * (n + 1)
-        offset: int = 1
+# Solution 1:
 
-        for n in range(1, n+1):
-            if (offset * 2) == n:
-                offset = n  
-            dp[n] = 1 + dp[n - offset]
-        return dp
+```python
+    def countBits(self, n: int) -> List[int]:
+        dp: list = [0] * (n+1)
+        offset: int = 1
 
+        for i in range(1, n+1):
+            if (offset*2) == i: offset = i
+            dp[i] = 1 + dp[i - offset]
+        
+        return dp
+```
